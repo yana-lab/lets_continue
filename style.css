@@ -1,0 +1,18 @@
+.navi {
+  background: green;
+}
+body {
+  margin: 0;
+}
+.navList {
+  list-style: none;
+  display: flex;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+}
