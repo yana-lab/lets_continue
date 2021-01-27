@@ -22,3 +22,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.animalSection {
+  display: flex;
+  color: white;
+}
+.animalSection:nth-child(2n) {
+  direction: rtl;
+}
