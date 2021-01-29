@@ -40,5 +40,16 @@ let candles = [
 ]
 // console.log(candles.length)
 for(let i=0; i<= candles.length -1; i++) {
-    console.log(candles[i].color)
+    // console.log(candles[i].color)
+}
+ let number = "8"
+// number--
+// number -= 4
+// number = number - 4
+// console.log(number != 8    )
+console.log(candles.length)
+if((candles.length >= 3 )) {
+    alert("UWAGA")
+} else {
+    alert("YES")
 }
