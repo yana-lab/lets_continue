@@ -47,9 +47,63 @@ for(let i=0; i<= candles.length -1; i++) {
 // number -= 4
 // number = number - 4
 // console.log(number != 8    )
-console.log(candles.length)
-if((candles.length >= 3 )) {
-    alert("UWAGA")
-} else {
-    alert("YES")
+// console.log(candles.length)
+// if((candles.length >= 3 )) {
+    // alert("UWAGA")
+// } else {
+    // alert("YES")
+// }
+let ikeaProducs = [
+    {
+        price: 60,
+        name: "lamp",
+    },
+    {
+        price: 990,
+        name: "bed"
+    },
+    {
+        price: 765,
+        name:"table"
+    },
+    {
+        price: 84,
+        name: "cupboard",
+    },
+    {
+        price: 40,
+        name: "cup"
+    },
+    {
+        price: 36,
+        name: "hanger"
+    },
+    {
+        price: 22,
+        name: "towel"
+    },
+    {
+        price: 70,
+        name: "plate"
+    },
+    {
+        price: 300,
+        name: "mirror"
+    },
+    {
+        price: 432,
+        name: "desk"
+    }
+]
+for(let i=0; i<= ikeaProducs.length -1; i++) {
+    if(ikeaProducs[i].price <=60) {
+        console.log(ikeaProducs[i])
+    
+    }
 }
+console.log("====================")
+ikeaProducs.forEach(function(viki){
+    if(viki.price > 500){
+        console.log(viki)
+    }
+})
