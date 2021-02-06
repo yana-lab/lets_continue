@@ -53,57 +53,160 @@ for(let i=0; i<= candles.length -1; i++) {
 // } else {
     // alert("YES")
 // }
-let ikeaProducs = [
-    {
-        price: 60,
-        name: "lamp",
-    },
-    {
-        price: 990,
-        name: "bed"
-    },
-    {
-        price: 765,
-        name:"table"
-    },
-    {
-        price: 84,
-        name: "cupboard",
-    },
-    {
-        price: 40,
-        name: "cup"
-    },
-    {
-        price: 36,
-        name: "hanger"
-    },
-    {
-        price: 22,
-        name: "towel"
-    },
-    {
-        price: 70,
-        name: "plate"
-    },
-    {
-        price: 300,
-        name: "mirror"
-    },
-    {
-        price: 432,
-        name: "desk"
-    }
-]
-for(let i=0; i<= ikeaProducs.length -1; i++) {
-    if(ikeaProducs[i].price <=60) {
-        console.log(ikeaProducs[i])
+
+
+
+
+
+
+
+
+// let ikeaProducs = [
+//     {
+//         price: 60,
+//         name: "lamp",
+//     },
+//     {
+//         price: 990,
+//         name: "bed"
+//     },
+//     {
+//         price: 765,
+//         name:"table"
+//     },
+//     {
+//         price: 84,
+//         name: "cupboard",
+//     },
+//     {
+//         price: 40,
+//         name: "cup"
+//     },
+//     {
+//         price: 36,
+//         name: "hanger"
+//     },
+//     {
+//         price: 22,
+//         name: "towel"
+//     },
+//     {
+//         price: 70,
+//         name: "plate"
+//     },
+//     {
+//         price: 300,
+//         name: "mirror"
+//     },
+//     {
+//         price: 432,
+//         name: "desk"
+//     }
+// ]
+
+// for(let i=0; i<= ikeaProducs.length -1; i++) {
+//     if(ikeaProducs[i].price <=60) {
+//         console.log(ikeaProducs[i])
     
+//     }
+// }
+// console.log("====================")
+// ikeaProducs.forEach(function(viki){
+//     if(viki.price > 500){
+//         console.log(viki)
+//     }
+// })
+
+
+const ProducsIKEA = [
+    [
+        {
+            price: 38,
+            name: "towel"
+        },
+        {
+            price: 82,
+            name: "hanger"
+        },
+        {
+            price: 83,
+            name: "cup"
+        }
+    ],
+    [
+        {
+            price: 92,
+            name: "plate"
+        },
+        {
+            price: 46,
+            name: "desk"
+        }
+    ]
+]
+
+
+// ProducsIKEA.forEach(function(products){
+//     console.log(products[products.length -1])
+// })
+// let mleko = "mleczko"
+// switch(mleko) {
+//     case "laktozowe":
+//         console.log("mlekoTwojeBardzoDobre")
+//         break
+//     case "nie laktozowe":
+//         console.log("kupiłeś nie laktozowe")
+//         break
+//     default: 
+//         console.log("nie znam tego mleka")
+// }
+
+// console.log("------------------------")
+
+// if (mleko === "laktozowe") {
+//     console.log("mlekoTwojeBardzoDobre")
+// } else if (mleko === "nie laktozowe") {
+//     console.log("kupiłeś nie laktozowe")
+// } else {
+//     console.log("nie znam tego mleka")
+// }
+let strawberry = {
+    color: "red",
+    smell: "fruity",
+    taste: "good",
+    look: "fresh",
+    name: "agatka",
+    getName: function(){
+        return this.name + " ma color " + this.color
     }
 }
-console.log("====================")
-ikeaProducs.forEach(function(viki){
-    if(viki.price > 500){
-        console.log(viki)
+// console.log(strawberry.getName())
+// // //let strawberryCopy = Object.assign({},strawberry)
+// let strawberryCopy = {...strawberry}
+// strawberryCopy.color = 'blue'
+// console.log(strawberry,strawberryCopy)
+
+
+let strawberrys = [
+    'test',
+    {
+        color: "red",
+        smell: "fruity",
+        taste: "good",
+        look: "fresh",
+        name: "agatka",
+        test: {},
+        getName: function(){
+            return this.name + " ma color " + this.color
+        }
     }
-})
+]
+// let strawberrysCopy = Array.from(strawberrys)
+// let strawberrysCopy = [...strawberrys]
+// strawberrysCopy[0].color = "yellow" 
+let strawberrysCopy = JSON.parse(
+    JSON.stringify(strawberrys)
+)
+strawberrysCopy[1].color = "yellow"
+strawberrysCopy[0] = "yellow" 
+ console.log(strawberrys,strawberrysCopy)
